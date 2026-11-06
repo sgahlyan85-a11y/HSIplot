@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "hsiplot: plot-level validation of hyperspectral spectra"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Kumar
+    given-names: Sumit
+license: MIT
+keywords: [hyperspectral imaging, cross-validation, pseudoreplication, permutation test, plant phenotyping]

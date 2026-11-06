@@ -1,0 +1,5 @@
+plot_id,npz,group,subset,biomass
+1,plot01.npz,control,speciesA,17.4
+2,plot02.npz,treated,speciesA,15.1
+3,plot03.npz,treated,speciesA,14.8
+4,plot04.npz,control,speciesA,18.0

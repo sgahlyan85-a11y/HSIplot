@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hsiplot"
+version = "1.0.0"
+description = "Plot-level validation of hyperspectral spectra: calibration, quality control, leakage-free cross-validation and permutation tests."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Sumit Kumar" }]
+keywords = ["hyperspectral", "spectroscopy", "random forest", "cross-validation", "plant phenotyping", "reproducibility"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = ["numpy>=1.20", "pandas>=1.3", "scipy>=1.7", "scikit-learn>=1.0", "joblib>=1.1", "matplotlib>=3.4", "openpyxl>=3.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff"]
+
+[project.scripts]
+hsiplot = "hsiplot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 140
+target-version = "py38"
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I"]
+ignore = ["E741", "B905"]
