@@ -6,5 +6,9 @@ version: 1.0.0
 authors:
   - family-names: Kumar
     given-names: Sumit
+    affiliation: "University of Lincoln"
 license: MIT
+repository-code: "https://github.com/sgahlyan85-a11y/HSIplot"
+url: "https://github.com/sgahlyan85-a11y/HSIplot"
+date-released: 2026-11-06
 keywords: [hyperspectral imaging, cross-validation, pseudoreplication, permutation test, plant phenotyping]

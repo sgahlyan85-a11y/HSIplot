@@ -111,4 +111,16 @@ The tests include positive and negative controls, calibration against a known an
 
 ## Author, citation, licence
 
-Sumit Kumar, University of Lincoln. Cite via `CITATION.cff`. MIT licence; the Living Optics SDK is proprietary and not included.
+Sumit Kumar, University of Lincoln. MIT licence; the Living Optics SDK is proprietary and not included.
+
+To cite, use the "Cite this repository" button on GitHub (from `CITATION.cff`), or:
+
+```bibtex
+@software{kumar_hsiplot_2026,
+  author  = {Kumar, Sumit},
+  title   = {hsiplot: plot-level validation of hyperspectral spectra},
+  year    = {2026},
+  version = {1.0.0},
+  url     = {https://github.com/sgahlyan85-a11y/HSIplot}
+}
+```

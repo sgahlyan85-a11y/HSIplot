@@ -10,6 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [{ name = "Sumit Kumar" }]
+maintainers = [{ name = "Sumit Kumar" }]
 keywords = ["hyperspectral", "spectroscopy", "random forest", "cross-validation", "plant phenotyping", "reproducibility"]
 classifiers = [
   "Programming Language :: Python :: 3",
@@ -18,6 +19,10 @@ classifiers = [
   "Topic :: Scientific/Engineering",
 ]
 dependencies = ["numpy>=1.20", "pandas>=1.3", "scipy>=1.7", "scikit-learn>=1.0", "joblib>=1.1", "matplotlib>=3.4", "openpyxl>=3.0"]
+
+[project.urls]
+Homepage = "https://github.com/sgahlyan85-a11y/HSIplot"
+Issues = "https://github.com/sgahlyan85-a11y/HSIplot/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7", "ruff"]

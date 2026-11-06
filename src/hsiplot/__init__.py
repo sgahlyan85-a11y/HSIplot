@@ -18,6 +18,7 @@ from .synthetic import make_synthetic_table
 from .trait import run_trait_model
 from .validate import ClassificationResult, random_split_demo, run_classification
 
+__author__ = "Sumit Kumar"
 __version__ = "1.0.0"
 __all__ = [
     "SpectraTable", "load_table", "build_tables", "PreprocessConfig", "preprocess_table", "plot_qc",
