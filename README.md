@@ -37,7 +37,7 @@ To check an installation, open `examples/check_my_setup.ipynb`: it tests the ana
 ```bash
 hsiplot demo
 ```
-Generates synthetic plots with and without a treatment effect, and analyses both. The no-effect run must not be declared significant, and the random-split score is printed next to the valid result to show the inflation.
+Generates synthetic plots (8 plots, 3 of them control) with and without a treatment effect, and analyses both; it takes about two minutes. The no-effect run is not declared significant, the effect run is recognised on unseen plots (plot AUC 1.0) and by PERMANOVA, and the random-split score is printed next to the valid result to show the inflation. With 8 plots the permutation p-values cannot go below 1/56, which is why both tests are reported.
 
 ## Use it on your data
 

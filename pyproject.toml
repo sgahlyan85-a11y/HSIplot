@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,13 +8,13 @@ version = "1.0.0"
 description = "Plot-level validation of hyperspectral spectra: calibration, quality control, leakage-free cross-validation and permutation tests."
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Sumit Kumar" }]
 maintainers = [{ name = "Sumit Kumar" }]
 keywords = ["hyperspectral", "spectroscopy", "random forest", "cross-validation", "plant phenotyping", "reproducibility"]
 classifiers = [
   "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
   "Intended Audience :: Science/Research",
   "Topic :: Scientific/Engineering",
 ]

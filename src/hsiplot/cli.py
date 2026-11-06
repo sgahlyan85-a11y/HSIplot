@@ -134,7 +134,7 @@ def cmd_demo(a) -> int:
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     for label, eff in (("with_effect", a.effect), ("no_effect", 0.0)):
-        t = make_synthetic_table(n_plots=8, n_control=2, n_spectra=80, n_bands=48, effect=eff, plot_sd=0.05, seed=a.seed)
+        t = make_synthetic_table(n_plots=8, n_control=3, n_spectra=60, n_bands=48, effect=eff, plot_sd=0.05, seed=a.seed)
         p = out / f"synthetic_{label}.csv"
         t.df.drop(columns="y").to_csv(p, index=False)
         print(f"\n=== synthetic data, {label} (NIR change in treated plots: {eff:.0%}) ===")
