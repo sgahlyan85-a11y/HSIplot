@@ -72,7 +72,7 @@ A trait measured once per plot has n = number of plots independent observations.
 
 ## 10. Verification in this repository
 
-`pytest` runs: calibration against a known answer; preprocessing behaviour (per-plot limits, clear errors); a positive control (known effect is recognised in unseen plots and by PERMANOVA); negative controls (no effect is not declared significant beyond chance); a leakage demonstration (plots with unique signatures and no treatment effect give a high random-split score but a non-significant plot-level result); reproducibility with a fixed seed; the extraction logic against a stand-in for the SDK; and the command-line interface.
+`pytest` runs: calibration against a known answer; preprocessing behaviour (per-plot limits, clear errors); a positive control (known effect is recognised in unseen plots and by PERMANOVA); negative controls (no effect is not declared significant beyond chance); a leakage demonstration (plots with unique signatures and no treatment effect give a high random-split score but a non-significant plot-level result); reproducibility with a fixed seed; the extraction logic (frame selection, reference calibration, error handling) through a test double of the SDK interface, since the SDK is proprietary; and the command-line interface.
 
 ## References
 

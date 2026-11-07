@@ -86,7 +86,7 @@ See [docs/WORKFLOW.md](docs/WORKFLOW.md) for the field protocol, the checks at e
 
 ### SDK requirements
 
-Extraction needs the proprietary Living Optics SDK, in an edition that includes the spectral decoder (account at https://cloud.livingoptics.com), and the factory calibration folder supplied for your camera. The SDK is not on PyPI and is not distributed here. Install `hsiplot` into the same Python environment as the SDK. The code follows the official Living Optics examples (github.com/livingoptics/python-examples): `open`, `SpectralDecoder.from_calibration(factory_calibration_folder, field_calibration_file)` and `decoder(frame, LORAWtoRGB8)`. `hsiplot check` reports the result of each step. Everything after extraction runs without the SDK.
+Extraction implements the Living Optics decode workflow used to produce the spectra in the author's MSc study: open the `.lo` file, build the decoder from the camera's factory calibration, and decode each frame to spectra and a scene image (`open`, `SpectralDecoder.from_calibration(factory_calibration_folder, field_calibration_file)`, `decoder(frame, LORAWtoRGB8)`, as in the official examples at github.com/livingoptics/python-examples). It requires the Living Optics SDK, in an edition that includes the spectral decoder (account at https://cloud.livingoptics.com), and the factory calibration folder supplied for your camera. The SDK is proprietary and is not distributed here; install `hsiplot` into the same Python environment as the SDK. `hsiplot check` reports the result of each step. Everything after extraction runs without the SDK, from a table of spectra.
 
 ## Reading the results
 

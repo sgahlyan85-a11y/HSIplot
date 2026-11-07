@@ -38,7 +38,7 @@ def test_detectability_increases_with_effect():
 
 @pytest.fixture
 def fake_sdk(monkeypatch):
-    """Minimal stand-in for the Living Optics SDK to test the extraction logic (not the real SDK)."""
+    """Test double of the Living Optics SDK interface, used to test the extraction logic without the proprietary SDK."""
     wl = np.linspace(440, 900, 96)
 
     class Meta:
